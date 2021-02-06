@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{520889c7-921c-4fd5-93d6-f283e0ce10d5}">
+	<object class="AudioFile" id="{c3fe50eb-1c30-4860-80d7-cd2e3bb39903}">
 		<property name="assetPath">
-			<value>pickaxe.ogg</value>
+			<value>run_dirt_4.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.50635416666666666</value>
+			<value>0.38907029478458049</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{37e30448-637a-434c-80b2-04882d1908f6}</destination>
