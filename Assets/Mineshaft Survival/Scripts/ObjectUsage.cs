@@ -90,6 +90,7 @@ public class ObjectUsage : MonoBehaviour {
 
                 if (Physics.Raycast(ray, out hit, 4f))
                 {
+                    if (inventory.Slot3.TryGetComponent<AudioSource>(out AudioSource source)) source.Play();
 
                     GameObject PickSpark = Instantiate(pickaxeSparks, hit.point, Quaternion.LookRotation(hit.normal));
                     Destroy(PickSpark, 3f);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Lantern : MonoBehaviour {
 
@@ -21,7 +22,9 @@ public class Lantern : MonoBehaviour {
     string LampID; //ID that has to be set for every gameobject of this type (has to be done manually)
     string LampToggleID;
 
-
+    [Header("Events")]
+    public UnityEvent TurnOnEvent;
+    public UnityEvent TurnOffEvent;
    
 
     public void LoadSettings()
@@ -105,6 +108,7 @@ public class Lantern : MonoBehaviour {
         LampToggleID = LampID + "togg";
         LoadSettings();
         StartCoroutine(AutoSave());
+        (toggled ? TurnOnEvent : TurnOffEvent)?.Invoke();
     }
 
 	void Update ()
@@ -133,12 +137,14 @@ public class Lantern : MonoBehaviour {
         toggled = true;
         Glass.material = LampOn; //if lamp gets turned on change its glass material to LampOn
         Light.SetActive(true);
+        TurnOnEvent?.Invoke();
     }
     public void TurnOff()
     {
         toggled = false;
         Glass.material = LampOff;//if lamp gets turned off change its glass material to LampOff
         Light.SetActive(false);
+        TurnOffEvent?.Invoke();
     }
     public void Toggle()
     {

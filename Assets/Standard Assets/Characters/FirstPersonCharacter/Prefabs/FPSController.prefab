@@ -173,8 +173,19 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: a29558377848ad54fad91560372f7f18, type: 3}
+  - {fileID: 8300000, guid: 1194fdcaa0fd8f749bf0f6ac2fd7073a, type: 3}
+  - {fileID: 8300000, guid: 75cd88e40e0448f48ad52579a6a9fc62, type: 3}
+  - {fileID: 8300000, guid: dbab0e608659ece499e2fda3e8e6661d, type: 3}
+  - {fileID: 8300000, guid: 8267198e2236a2442a6fe30ab0daf13c, type: 3}
+  - {fileID: 8300000, guid: a247ab280f489ae4ebb896462f7cba46, type: 3}
+  runningFootsteps:
+  - {fileID: 8300000, guid: bfabddf1c75b2de44b94b546eef1a576, type: 3}
+  - {fileID: 8300000, guid: 0ad7e525fd6325a40b1a92bcfd940a90, type: 3}
+  - {fileID: 8300000, guid: 6382260817e8306479338366fd1176c9, type: 3}
+  - {fileID: 8300000, guid: cef6e0257b78d12478c50fbe24c1cbec, type: 3}
+  - {fileID: 8300000, guid: d3eb47b55310302488a7208ee80a5f93, type: 3}
+  - {fileID: 8300000, guid: ac52730c890acf6459c40b0a9539f23f, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!54 &5400000

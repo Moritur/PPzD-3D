@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityStandardAssets.Characters.ThirdPerson;
 
 public class AIController : MonoBehaviour {
@@ -26,6 +27,9 @@ public class AIController : MonoBehaviour {
     public GameObject Player;//Player
     Rigidbody rb; //Automaticly finds the rigidbody
     float distance; //distance float for distance calculations
+
+    [Header("Events")]
+    public UnityEvent DieEvent;
 
     void Start()
     {
@@ -107,5 +111,7 @@ public class AIController : MonoBehaviour {
         thirdChar.enabled = false; //disable all scripts after death
         Target.enabled = false; // ^
         this.enabled = false; // ^
+
+        DieEvent?.Invoke();
     }
 }
